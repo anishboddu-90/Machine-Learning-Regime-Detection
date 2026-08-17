@@ -30,8 +30,8 @@ To provide the model with "context", several rolling technical indicators were e
  | **Win Rate** | 74.00% | 54.85% | **86.60%** |
  **Base Rate (Actual Bias):** 24.96%
  
-## Key Insight: Why the Heuristic Won
-While the model had a higher accuracy,  its precision is low. This project highlights 3 critical aspects :
+## Why the Heuristic Won
+While the model had a higher accuracy,  its precision is low. This project led to 3 critical conclusions :
 
 1. **Signal-to-Noise Floor:** In a process where the bias is only 2% (52/48), the signal is so faint that a model like a Random Forest often mistakes random clusters of noise for structural regimes. 
 2. **The Heuristic Edge:** The previous heuristic (`sum > 4`) acted as a high-pass filter. It had lower Recall (missed many regimes) but higher Precision. The ML model tried to find *every* regime, resulting in too many false positives. 
